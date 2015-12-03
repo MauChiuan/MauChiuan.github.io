@@ -1,1 +1,3 @@
-# achiuan.github.io
+# 阿銓的 GitHub Pages
+
+此為放置有關阿銓所學習與開發的相關程式碼以及範例網頁。
