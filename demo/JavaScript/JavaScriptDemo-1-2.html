@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 學習筆記 (1) - 敘述結束範例</title>
+</head>
+<body>
+   <h2>
+       正確使用 ;
+   </h2>
+    <script>
+        var a =10;        
+        var func = function abc(){
+            a = 20;
+        }; //正確用分號結束 function 的敘述
+        (function cde(){           
+        }); 
+        
+        func();
+        document.write("變數 a：",a,"<br>");
+    </script>
+    <h2>
+       未正確使用 ;
+   </h2>
+    <script>
+        var a =10;        
+        var func = function abc(){
+            a = 20;
+        } //省略用分號結束 function 的敘述
+        (function cde(){           
+        });
+        
+        func();
+        document.write("變數 a：",a,"<br>");
+    </script>
+    使用 chrome 瀏覽器可以按下 F12 開啟開發者工具並選擇 Console 分頁標籤，即可看到錯誤訊息。
+</body>
+</html>

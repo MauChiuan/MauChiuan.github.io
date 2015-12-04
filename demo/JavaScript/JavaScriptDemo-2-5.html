@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 學習筆記 (2) - 變數與資料型別</title>
+</head>
+<body>
+   <h2>型別轉換 - 轉成數值 Number</h2>
+    <script>
+        var a = "10"; //string
+        document.write("變數 a 原本型別：", typeof(a),"<br>");
+        a = Number(a); //轉成 Number
+        document.write("變數 a 轉換型別：", typeof(a),"<br>");
+        
+        var b = "20"; // string
+        document.write("變數 b 原本型別：", typeof(b),"<br>");
+        b = parseInt(b); //轉成 Number
+        document.write("變數 b 轉換型別：", typeof(b),"<br>");
+      
+        var c = a + b; // 將變數 a,b 相加
+        document.write("變數 c 值為：", c,"<br>");
+        document.write("變數 c 型別：", typeof(c),"<br>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 學習筆記 (2) - 變數與資料型別</title>
+</head>
+<body>
+   <h2>資料型別</h2>
+    <script>
+        var a = 10; //number
+        var b = "文字"; //string
+        var c = false; //boolean
+        var d = new Array(1,2,3); //object 雖宣告 Array 但是型態仍是屬於物件
+        var e = function abc(){}; // function
+        
+        document.write("變數 a 型別：", typeof(a),"<br>");
+        document.write("變數 b 型別：",typeof(b),"<br>");
+        document.write("變數 c 型別：", typeof(c),"<br>");
+        document.write("變數 d 型別：",typeof(d),"<br>");
+        document.write("變數 d 型別：",typeof(e),"<br>");
+        document.write("null 型別：",typeof(null),"<br>"); // null 型別的型態屬於物件
+        document.write("undefined 型別：",typeof(undefined),"<br>");
+    </script>
+</body>
+</html>
