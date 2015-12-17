@@ -8,7 +8,11 @@
 
 <body>
     <h3><a href="http://www.achiuan.com/" target="_blank">阿銓的異想世界 - javascript - 教學筆記 - 範例</a></h3>
-    <h2>正確使用 ;</h2>
+    <h2>正確使用 :</h2>
+    <br>
+    原始碼：
+    <br>
+    <textarea cols="50" rows="12" disabled="true">
     <script>
         var a = 10;
         var func = function abc() {
@@ -19,7 +23,42 @@
         func();
         document.write("變數 a：", a, "<br>");
     </script>
-    <h2>未正確使用 ;</h2>
+    </textarea>
+    <br>
+    <br>
+    結果：
+    <br>
+    <script>
+        var a = 10;
+        var func = function abc() {
+            a = 20;
+        }; //正確用分號結束 function 的敘述
+        (function cde() {});
+
+        func();
+        document.write("變數 a：", a, "<br>");
+    </script>
+    <br>
+    <h2>未正確使用 :</h2>
+    <br>
+    原始碼：
+    <br>
+    <textarea cols="50" rows="12" disabled="true">
+    <<script>
+        var a = 10;
+        var func = function abc() {
+                a = 20;
+            } //省略用分號結束 function 的敘述
+            (function cde() {});
+
+        func();
+        document.write("變數 a：", a, "<br>");
+    </script>
+    </textarea>
+    <br>
+    <br>
+    結果：
+    <br>
     <script>
         var a = 10;
         var func = function abc() {
@@ -30,6 +69,7 @@
         func();
         document.write("變數 a：", a, "<br>");
     </script>
+    <br>
     使用 chrome 瀏覽器可以按下 F12 開啟開發者工具並選擇 Console 分頁標籤，即可看到錯誤訊息。
 </body>
 
